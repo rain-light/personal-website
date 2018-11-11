@@ -1,0 +1,34 @@
+.navigation {
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 3.5rem;
+    }
+
+    &__list {
+        list-style: none;
+
+        display: flex;
+    }
+
+    &__element {
+        margin: 0 2rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
