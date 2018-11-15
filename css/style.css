@@ -389,6 +389,12 @@ body {
   background-color: #fff;
   visibility: hidden;
   opacity: 0;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: opacity 0s .7s, visibility 0s .7s, -webkit-transform .5s .2s ease-out;
+  transition: opacity 0s .7s, visibility 0s .7s, -webkit-transform .5s .2s ease-out;
+  transition: transform .5s .2s ease-out, opacity 0s .7s, visibility 0s .7s;
+  transition: transform .5s .2s ease-out, opacity 0s .7s, visibility 0s .7s, -webkit-transform .5s .2s ease-out;
 }
 
 .mobile__checkbox {
@@ -438,6 +444,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
 }
 
 .mobile__logo-box {
@@ -500,5 +509,17 @@ body {
 .mobile__checkbox:checked ~ .mobile {
   visibility: visible;
   opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform .5s ease-in;
+  transition: -webkit-transform .5s ease-in;
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+.mobile__checkbox:checked ~ .mobile .mobile__content {
+  opacity: 1;
+  -webkit-transition: opacity .3s .5s;
+  transition: opacity .3s .5s;
 }
 /*# sourceMappingURL=style.css.map */
