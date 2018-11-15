@@ -24,11 +24,13 @@ html {
   /* This curve has a medium of 9.5px and is an experimental attempt
     to make the root font size fluidly responsive instead of making
     it change with media queries at certain breakpoints. */
+    overflow: hidden;
 }
 
 body {
     box-sizing: border-box;
     font-size: 1.6rem;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium', sans-serif;
     line-height: 1.7;
+    overflow: hidden;
 }

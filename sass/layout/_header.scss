@@ -1,0 +1,29 @@
+.header {
+    height: 100vh;
+    position: relative;
+
+    &__shape-big {
+        position: absolute;
+        width: 80%;
+        top: 0;
+        right: 0;
+        transform: translate(20%, -70%);
+
+        @media only screen and (max-aspect-ratio: 70/71) {
+            transform: translate(20%, -55%);
+        }
+    }
+
+    &__shape-small {
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        left: 0;
+        transform: translate(-10%, 50%);
+
+        @media only screen and (max-aspect-ratio: 70/71) {
+            width: 50%;
+            transform: translate(-10%, 40%);
+        }
+    }
+}

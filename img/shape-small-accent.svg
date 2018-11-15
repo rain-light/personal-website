@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="266.7" height="269.8" viewBox="0 0 266.7 269.8">
+  <defs>
+    <linearGradient id="Sfumatura_senza_nome_38" data-name="Sfumatura senza nome 38" y1="134.91" x2="266.68" y2="134.91" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffec0b"/>
+      <stop offset="0.05" stop-color="#ffe80b"/>
+      <stop offset="0.36" stop-color="#ffd50b"/>
+      <stop offset="0.67" stop-color="#ffca0b"/>
+      <stop offset="1" stop-color="#ffc60b"/>
+    </linearGradient>
+  </defs>
+  <g id="Livello_2" data-name="Livello 2">
+    <g id="OBJECTS">
+      <path d="M184.7,209.8c-17.6-11.2-36-23-46.5-41-16-27.2-10.7-62-22.6-91.1-8.6-21.1-25.7-37.8-45-49.9S29.8,7.8,8.4,0Q4.2,108.3.1,216.7c-.3,8.9-.2,19.1,6.4,25.2,4.4,4,10.7,5.2,16.6,6.2,70.6,11.9,141.8,23.8,213.4,21.4,7.5-.2,15.4-.8,21.7-4.9,23.1-15.3-7.1-22.3-17.6-25.7C220.6,232.4,202.5,221,184.7,209.8Z" style="fill: url(#Sfumatura_senza_nome_38)"/>
+    </g>
+  </g>
+</svg>
