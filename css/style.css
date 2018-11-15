@@ -39,6 +39,36 @@ body {
   font-family: 'Titillium', sans-serif;
   line-height: 1.7;
   overflow: hidden;
+  color: #3a3e41;
+}
+
+.heading-1 {
+  font-size: calc((0.017857142857143 * 100vw) + 24.285714285714px);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 1px;
+  /* 2000, 60
+    1650, 53.75
+    1300, 47.5
+    950, 41.25
+    600, 35 */
+  /* @include respond(phone) {
+        font-size: 5rem;
+    } */
+}
+
+.heading-2 {
+  font-size: calc((0.0071428571428571 * 100vw) + 15.714285714286px);
+  font-weight: 300;
+  line-height: 1;
+  /* 2000, 30
+    1650, 27.5
+    1300, 25
+    950, 22.5
+    600, 20 */
+  /* @include respond(phone) {
+        font-size: 2.5rem;
+    } */
 }
 
 /* SOCIAL ICONS */
@@ -142,16 +172,16 @@ body {
 .btn--primary,
 .btn--primary:link,
 .btn--primary:visited {
-  background-color: #FFC60B;
+  background-color: #009AFF;
   color: #fff;
-  border: 1px solid #FFC60B;
+  border: 1px solid #009AFF;
 }
 
 .btn--primary:hover,
 .btn--primary:link:hover,
 .btn--primary:visited:hover {
   background-color: #fff;
-  color: #FFC60B;
+  color: #009AFF;
 }
 
 .btn--normal,
@@ -204,6 +234,73 @@ body {
     -webkit-transform: translate(-10%, 40%);
             transform: translate(-10%, 40%);
   }
+}
+
+.header__illustration {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  height: 80%;
+  max-width: 50%;
+  -webkit-transform: translate(45vw, -50%);
+          transform: translate(45vw, -50%);
+}
+
+@media only screen and (max-aspect-ratio: 70 / 71) {
+  .header__illustration {
+    height: auto;
+    max-height: 45%;
+    max-width: 80%;
+    width: 100%;
+    top: auto;
+    bottom: 50%;
+    -webkit-transform: translate(50%, 100%);
+            transform: translate(50%, 100%);
+  }
+}
+
+@media only screen and (min-aspect-ratio: 71 / 70) and (max-width: 56.25em) {
+  .header__illustration {
+    -webkit-transform: translate(50vw, -50%);
+            transform: translate(50vw, -50%);
+  }
+}
+
+.header__content {
+  max-width: 50%;
+  position: absolute;
+  left: 12.5%;
+  top: 30%;
+}
+
+@media only screen and (max-width: 75em) {
+  .header__content {
+    left: 5%;
+  }
+}
+
+@media only screen and (max-aspect-ratio: 70 / 71) {
+  .header__content {
+    max-width: none;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -125%);
+            transform: translate(-50%, -125%);
+  }
+}
+
+.header__subheading {
+  margin-top: 2rem;
+  max-width: 80%;
+}
+
+.header__buttons {
+  margin-top: 3rem;
+}
+
+.header__buttons *:first-child {
+  margin-right: 2rem;
 }
 
 .navigation {

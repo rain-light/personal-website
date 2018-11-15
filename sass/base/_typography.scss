@@ -1,0 +1,32 @@
+.heading-1 {
+    font-size: calc((0.017857142857143 * 100vw) + 24.285714285714px); //Function below
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 1px;
+
+    /* 2000, 60
+    1650, 53.75
+    1300, 47.5
+    950, 41.25
+    600, 35 */
+
+    /* @include respond(phone) {
+        font-size: 5rem;
+    } */
+}
+
+.heading-2 {
+    font-size: calc((0.0071428571428571 * 100vw) + 15.714285714286px); //Function below
+    font-weight: 300;
+    line-height: 1;
+
+    /* 2000, 30
+    1650, 27.5
+    1300, 25
+    950, 22.5
+    600, 20 */
+
+    /* @include respond(phone) {
+        font-size: 2.5rem;
+    } */
+}

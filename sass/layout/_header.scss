@@ -26,4 +26,67 @@
             transform: translate(-10%, 40%);
         }
     }
+
+    &__illustration {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        height: 80%;
+        max-width: 50%;
+        transform: translate(45vw, -50%);
+
+        @media only screen and (max-aspect-ratio: 70/71) {
+            height: auto;
+            max-height: 45%;
+            max-width: 80%;
+            width: 100%;
+            top: auto;
+            bottom: 50%;
+            transform: translate(50%, 100%);
+        }
+
+        @media only screen and (min-aspect-ratio: 71/70) and (max-width: 56.25em) {
+            transform: translate(50vw, -50%);
+        }
+    }
+
+    &__content {
+        max-width: 50%;
+        position: absolute;
+        left: 12.5%;
+        top: 30%;
+
+        @include respond(tab-land) {
+            left: 5%;
+        }
+
+        @media only screen and (max-aspect-ratio: 70/71) {
+            max-width: none;
+            width: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -125%);
+        }
+    }
+
+    &__text {
+
+    }
+
+    &__heading-main {
+
+    }
+
+    &__subheading {
+        margin-top: 2rem;
+        max-width: 80%;;
+    }
+
+    &__buttons {
+        margin-top: 3rem;
+
+        & *:first-child {
+            margin-right: 2rem;
+        }
+    }
 }

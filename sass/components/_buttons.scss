@@ -23,13 +23,13 @@
 .btn--primary,
 .btn--primary:link,
 .btn--primary:visited {
-    background-color: $color-accent;
+    background-color: $color-primary;
     color: #fff;
-    border: 1px solid $color-accent;
+    border: 1px solid $color-primary;
 
     &:hover {
         background-color: #fff;
-        color: $color-accent;
+        color: $color-primary;
     }
 }
 
