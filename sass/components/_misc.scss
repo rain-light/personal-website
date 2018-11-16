@@ -64,4 +64,9 @@
     &--github {
         fill: #333;
     }
+
+    @media only screen and (max-aspect-ratio: 70/71) and (min-height: 37.5em) {
+        width: 8vw;
+        height: 8vw;
+    }
 }

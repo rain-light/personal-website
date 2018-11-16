@@ -201,6 +201,11 @@
     &__logo-box {
         width: 5rem;
         margin-top: 4rem;
+
+        @media only screen and (max-aspect-ratio: 70/71) and (min-height: 37.5em) {
+            width: 10vw;
+            margin-top: 15vw;
+        }
     }
 
     &__logo {
@@ -233,6 +238,10 @@
         color: $color-primary;
         text-transform: uppercase;
         font-size: 3rem;
+
+        @media only screen and (max-aspect-ratio: 70/71) and (min-height: 37.5em) {
+            font-size: 8vw;
+        }
     }
 
     &__social-icons {

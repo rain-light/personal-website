@@ -159,6 +159,13 @@ body {
   fill: #333;
 }
 
+@media only screen and (max-aspect-ratio: 70 / 71) and (min-height: 37.5em) {
+  .mobile-social-icon {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -555,6 +562,13 @@ body {
   margin-top: 4rem;
 }
 
+@media only screen and (max-aspect-ratio: 70 / 71) and (min-height: 37.5em) {
+  .mobile__logo-box {
+    width: 10vw;
+    margin-top: 15vw;
+  }
+}
+
 .mobile__logo {
   width: 100%;
 }
@@ -590,6 +604,12 @@ body {
   color: #009AFF;
   text-transform: uppercase;
   font-size: 3rem;
+}
+
+@media only screen and (max-aspect-ratio: 70 / 71) and (min-height: 37.5em) {
+  .mobile__link, .mobile__link:link, .mobile__link:visited {
+    font-size: 8vw;
+  }
 }
 
 .mobile__social-icons {
