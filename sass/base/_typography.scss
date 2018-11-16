@@ -13,6 +13,13 @@
     /* @include respond(phone) {
         font-size: 5rem;
     } */
+    
+    &--vw { //Special size for tablets
+        
+        @media only screen and (max-aspect-ratio: 70/71) and (min-width: 37.5em) {
+            font-size: 8vw;
+        }
+    }
 }
 
 .heading-2 {
@@ -29,4 +36,11 @@
     /* @include respond(phone) {
         font-size: 2.5rem;
     } */
+
+    &--vw {
+        
+        @media only screen and (max-aspect-ratio: 70/71) and (min-width: 37.5em) {
+            font-size: 4vw;
+        }
+    }
 }

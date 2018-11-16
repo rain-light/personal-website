@@ -9,14 +9,14 @@
     transition: color .3s, background-color .3s;
 }
 
-.btn--special,
-.btn--special:link,
-.btn--special:visited {
+.btn--vw,
+.btn--vw:link,
+.btn--vw:visited {
 
-    @media only screen and (max-aspect-ratio: 70/71) {
-        padding: 1.2vw 7vw;
+    @media only screen and (max-aspect-ratio: 70/71) and (min-width: 37.5em) { //Special sizes for tablets
+        padding: 1vw 5vw;
         border-radius: .6vw;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
 
