@@ -23,7 +23,6 @@ html {
   /* This curve has a medium of 9.5px and is an experimental attempt
     to make the root font size fluidly responsive instead of making
     it change with media queries at certain breakpoints. */
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -38,8 +37,13 @@ body {
   font-size: 1.6rem;
   font-family: 'Titillium', sans-serif;
   line-height: 1.7;
-  overflow: hidden;
   color: #3a3e41;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 .heading-1 {
@@ -81,6 +85,66 @@ body {
   .heading-2--vw {
     font-size: 4vw;
   }
+}
+
+.heading-4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.heading-title {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20rem;
+}
+
+@media only screen and (max-aspect-ratio: 70 / 71) and (min-height: 62.5em) {
+  .wrapper {
+    height: 100%;
+  }
+}
+
+/* DECORATIVE SHAPES */
+.shape-big {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(20%, -70%);
+          transform: translate(20%, -70%);
+}
+
+@media only screen and (max-aspect-ratio: 70 / 71) {
+  .shape-big {
+    -webkit-transform: translate(20%, -55%);
+            transform: translate(20%, -55%);
+  }
+}
+
+.shape-small {
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-10%, 50%);
+          transform: translate(-10%, 50%);
+}
+
+@media only screen and (max-aspect-ratio: 70 / 71) {
+  .shape-small {
+    width: 50%;
+    -webkit-transform: translate(-10%, 40%);
+            transform: translate(-10%, 40%);
+  }
+}
+
+.shape {
+  width: 100%;
 }
 
 /* SOCIAL ICONS */
@@ -166,6 +230,11 @@ body {
   }
 }
 
+/* PAGE TITLE */
+.title {
+  text-align: center;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -206,53 +275,21 @@ body {
 .btn--normal,
 .btn--normal:link,
 .btn--normal:visited {
-  color: #000;
-  border: 1px solid #000;
+  color: #3a3e41;
+  border: 1px solid #3a3e41;
 }
 
 .btn--normal:hover,
 .btn--normal:link:hover,
 .btn--normal:visited:hover {
-  background-color: #000;
+  background-color: #3a3e41;
   color: #fff;
 }
 
 .header {
   height: 100vh;
   position: relative;
-}
-
-.header__shape-big {
-  position: absolute;
-  width: 80%;
-  top: 0;
-  right: 0;
-  -webkit-transform: translate(20%, -70%);
-          transform: translate(20%, -70%);
-}
-
-@media only screen and (max-aspect-ratio: 70 / 71) {
-  .header__shape-big {
-    -webkit-transform: translate(20%, -55%);
-            transform: translate(20%, -55%);
-  }
-}
-
-.header__shape-small {
-  position: absolute;
-  width: 30%;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: translate(-10%, 50%);
-          transform: translate(-10%, 50%);
-}
-
-@media only screen and (max-aspect-ratio: 70 / 71) {
-  .header__shape-small {
-    width: 50%;
-    -webkit-transform: translate(-10%, 40%);
-            transform: translate(-10%, 40%);
-  }
+  overflow: hidden;
 }
 
 .header__grid {
@@ -522,7 +559,7 @@ body {
 .mobile__close-btn-line {
   width: 15px;
   height: 1px;
-  background-color: #000;
+  background-color: #3a3e41;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -642,5 +679,37 @@ body {
   opacity: 1;
   -webkit-transition: opacity .3s .5s;
   transition: opacity .3s .5s;
+}
+
+.portfolio {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (35rem)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 35rem);
+  grid-column-gap: 3rem;
+  grid-row-gap: 6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.bottom-shape {
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate(-5%, 39%);
+          transform: translate(-5%, 39%);
+}
+
+.page-portfolio__main {
+  margin-top: 12rem;
+  padding-bottom: 10rem;
+}
+
+.page-portfolio__portfolio {
+  margin: 5rem 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -24,7 +24,6 @@ html {
   /* This curve has a medium of 9.5px and is an experimental attempt
     to make the root font size fluidly responsive instead of making
     it change with media queries at certain breakpoints. */
-    overflow: hidden;
 }
 
 body {
@@ -32,6 +31,11 @@ body {
     font-size: 1.6rem;
     font-family: 'Titillium', sans-serif;
     line-height: 1.7;
-    overflow: hidden;
-    color: rgb(58, 62, 65);
+    color: $color-gray-dark;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
 }

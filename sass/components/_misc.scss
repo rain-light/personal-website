@@ -1,3 +1,43 @@
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20rem;
+
+    @media only screen and (max-aspect-ratio: 70/71) and (min-height: 62.5em) {
+        height: 100%;
+    }
+}
+
+/* DECORATIVE SHAPES */
+.shape-big {
+    position: absolute;
+    width: 80%;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -70%);
+
+    @media only screen and (max-aspect-ratio: 70/71) {
+        transform: translate(20%, -55%);
+    }
+}
+
+.shape-small {
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    left: 0;
+    transform: translate(-10%, 50%);
+
+    @media only screen and (max-aspect-ratio: 70/71) {
+        width: 50%;
+        transform: translate(-10%, 40%);
+    }
+}
+
+.shape {
+    width: 100%;
+}
+
 /* SOCIAL ICONS */
 .social-icon {
     width: 1.8rem;
@@ -69,4 +109,9 @@
         width: 8vw;
         height: 8vw;
     }
+}
+
+/* PAGE TITLE */
+.title {
+    text-align: center;
 }

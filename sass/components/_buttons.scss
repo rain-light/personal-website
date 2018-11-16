@@ -36,11 +36,11 @@
 .btn--normal,
 .btn--normal:link,
 .btn--normal:visited {
-    color: #000;
-    border: 1px solid #000;
+    color: $color-gray-dark;
+    border: 1px solid $color-gray-dark;
 
     &:hover {
-        background-color: #000;
+        background-color: $color-gray-dark;
         color: #fff;
     }
 }

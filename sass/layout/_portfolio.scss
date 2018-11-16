@@ -1,0 +1,10 @@
+.portfolio {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    grid-column-gap: 3rem;
+    grid-row-gap: 6rem;
+    justify-content: center;
+    justify-items: center;
+}
