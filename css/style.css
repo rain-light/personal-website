@@ -97,18 +97,6 @@ body {
   text-transform: uppercase;
 }
 
-.wrapper {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 20rem;
-}
-
-@media only screen and (max-aspect-ratio: 70 / 71) and (min-height: 62.5em) {
-  .wrapper {
-    height: 100%;
-  }
-}
-
 /* DECORATIVE SHAPES */
 .shape-big {
   position: absolute;
@@ -694,14 +682,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-}
-
-.bottom-shape {
-  height: 20%;
-  position: absolute;
-  bottom: 0;
-  -webkit-transform: translate(-5%, 39%);
-          transform: translate(-5%, 39%);
 }
 
 .page-portfolio__main {

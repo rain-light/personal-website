@@ -1,13 +1,3 @@
-.wrapper {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 20rem;
-
-    @media only screen and (max-aspect-ratio: 70/71) and (min-height: 62.5em) {
-        height: 100%;
-    }
-}
-
 /* DECORATIVE SHAPES */
 .shape-big {
     position: absolute;
