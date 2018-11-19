@@ -7,4 +7,89 @@
     grid-row-gap: 6rem;
     justify-content: center;
     justify-items: center;
+
+    &__entry {
+
+        &:hover .portfolio__image::after,
+        &:hover .portfolio__icon {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 100%;
+        height: 17.37rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--square {
+            background-image: url(/img/square.png);
+        }
+
+        &--olios {
+            background-image: url(/img/olios.png);
+        }
+
+        &--mars {
+            background-image: url(/img/mars.png);
+        }
+
+        &--gratia {
+            background-image: url(/img/gratia.png);
+        }
+
+        &--westa {
+            background-image: url(/img/westa.jpg);
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .7);
+            border-radius: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .3s, visibility .3s;
+        }
+    }
+
+    &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: rgba(255, 255, 255, .9);
+        position: relative;
+        z-index: 1;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility .3s;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__title {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    &__description {
+        font-weight: 300;
+    }
 }

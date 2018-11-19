@@ -35,12 +35,14 @@
 
     &__content {
         min-width: 30rem;
+        width: 100%;
+        max-width: 60vw;
     }
 
 
     &__subheading {
         margin-top: 2rem;
-        max-width: 80%;
+        /* max-width: 80%; */
     }
 
     &__buttons {

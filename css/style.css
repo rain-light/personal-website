@@ -97,6 +97,11 @@ body {
   text-transform: uppercase;
 }
 
+.heading-title-small {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 /* DECORATIVE SHAPES */
 .shape-big {
   position: absolute;
@@ -117,7 +122,7 @@ body {
 .shape-small {
   position: absolute;
   width: 30%;
-  bottom: 0;
+  bottom: calc((0.05 * 100vh) - 50px);
   left: 0;
   -webkit-transform: translate(-10%, 50%);
           transform: translate(-10%, 50%);
@@ -324,11 +329,13 @@ body {
 
 .header__content {
   min-width: 30rem;
+  width: 100%;
+  max-width: 60vw;
 }
 
 .header__subheading {
   margin-top: 2rem;
-  max-width: 80%;
+  /* max-width: 80%; */
 }
 
 .header__buttons {
@@ -684,9 +691,101 @@ body {
   justify-items: center;
 }
 
+.portfolio__entry:hover .portfolio__image::after,
+.portfolio__entry:hover .portfolio__icon {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio__image {
+  position: relative;
+  width: 100%;
+  height: 17.37rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio__image--square {
+  background-image: url(/img/square.png);
+}
+
+.portfolio__image--olios {
+  background-image: url(/img/olios.png);
+}
+
+.portfolio__image--mars {
+  background-image: url(/img/mars.png);
+}
+
+.portfolio__image--gratia {
+  background-image: url(/img/gratia.png);
+}
+
+.portfolio__image--westa {
+  background-image: url(/img/westa.jpg);
+}
+
+.portfolio__image::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s, visibility .3s;
+  transition: opacity .3s, visibility .3s;
+}
+
+.portfolio__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s, visibility .3s;
+  transition: opacity .3s, visibility .3s;
+}
+
+.portfolio__link, .portfolio__link:link, .portfolio__link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio__title {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.portfolio__description {
+  font-weight: 300;
+}
+
+.footer {
+  padding: 4rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 .page-portfolio__main {
   margin-top: 12rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .page-portfolio__portfolio {

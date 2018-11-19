@@ -14,7 +14,7 @@
 .shape-small {
     position: absolute;
     width: 30%;
-    bottom: 0;
+    bottom: calc((0.05 * 100vh) - 50px);
     left: 0;
     transform: translate(-10%, 50%);
 
