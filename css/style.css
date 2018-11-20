@@ -92,6 +92,11 @@ body {
   font-weight: 300;
 }
 
+.heading-5 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
 .heading-title {
   font-size: 5rem;
   text-transform: uppercase;
@@ -100,6 +105,19 @@ body {
 .heading-title-small {
   font-size: 2rem;
   font-weight: 600;
+}
+
+/* Layout */
+.u-margin-top-special {
+  margin-top: 12rem !important;
+}
+
+.u-margin-top-normal {
+  margin-top: 5rem !important;
+}
+
+.u-padding-bottom-medium {
+  padding-bottom: 5rem !important;
 }
 
 /* DECORATIVE SHAPES */
@@ -226,6 +244,13 @@ body {
 /* PAGE TITLE */
 .title {
   text-align: center;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .btn,
@@ -783,12 +808,11 @@ body {
   text-align: center;
 }
 
-.page-portfolio__main {
-  margin-top: 12rem;
-  padding-bottom: 5rem;
-}
-
 .page-portfolio__portfolio {
   margin: 5rem 0;
+}
+
+.about__heading {
+  padding: 0 10%;
 }
 /*# sourceMappingURL=style.css.map */
