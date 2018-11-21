@@ -3,4 +3,34 @@
     &__heading {
         padding: 0 10%;
     }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-column-gap: 5%;
+        grid-row-gap: 5rem;
+
+        & > * {
+            
+            @include respond(tab-land) {
+                padding: 0 2rem;
+            }
+        }
+    }
+
+    &__about-paragraph {
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+
+        &--right {
+            text-align: right;
+        }
+    }
 }

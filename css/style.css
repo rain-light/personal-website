@@ -39,6 +39,7 @@ body {
   line-height: 1.7;
   color: #3a3e41;
   overflow-x: hidden;
+  position: relative;
 }
 
 html,
@@ -120,7 +121,23 @@ body {
   padding-bottom: 5rem !important;
 }
 
+/* Text */
+.u-text-600 {
+  font-weight: 600 !important;
+}
+
+.u-text-em {
+  font-style: italic !important;
+}
+
 /* DECORATIVE SHAPES */
+.shape-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-x: hidden;
+}
+
 .shape-big {
   position: absolute;
   width: 80%;
@@ -251,6 +268,14 @@ body {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
+}
+
+/* GENERAL LINK */
+.link,
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #009AFF;
 }
 
 .btn,
@@ -814,5 +839,33 @@ body {
 
 .about__heading {
   padding: 0 10%;
+}
+
+.about__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-column-gap: 5%;
+  grid-row-gap: 5rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .about__grid > * {
+    padding: 0 2rem;
+  }
+}
+
+.about__about-paragraph:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.about__title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.about__title--right {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
