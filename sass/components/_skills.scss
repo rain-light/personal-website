@@ -1,0 +1,86 @@
+.skills {
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__skill-box {
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__skill-name {
+        text-align: right;
+        margin-bottom: .5rem;
+
+        /* span {
+            font-weight: 600;
+        } */
+    }
+
+    &__skill-bar {
+        background-color: $color-gray;
+        width: 90%;
+        height: 3rem;
+        margin-left: auto;
+        border-radius: .5rem;
+    }
+
+    &__skill-bar-value-box {
+        position: relative;
+        height: 100%;
+        border-radius: inherit;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: .5rem 0 0 .5rem;
+            top: 0;
+            right: 0;
+            background-size: 4.2rem;
+        }
+
+        &--full {
+            width: 100%;
+            
+            &::after {
+                border-radius: inherit;
+                background-image: repeating-linear-gradient(45deg, $color-green 0rem, $color-green 1.5rem, $color-green-light 1.5rem, $color-green-light 3rem);
+                animation: progress-bar 5s linear infinite;
+            }
+        }
+
+        &--90 {
+            width: 90%;
+
+            &::after {
+                background-image: repeating-linear-gradient(45deg, $color-sky 0rem, $color-sky 1.5rem, $color-sky-light 1.5rem, $color-sky-light 3rem);
+                animation: progress-bar 1.8s linear infinite;
+            }
+        }
+
+        &--10 {
+            width: 10%;
+
+            &::after {
+                background-image: repeating-linear-gradient(45deg, $color-yellow 0rem, $color-yellow 1.5rem, $color-yellow-light 1.5rem, $color-yellow-light 3rem);
+                animation: progress-bar .8s linear infinite;
+            }
+        }
+    }
+
+    &__skill-value {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+    }
+}
