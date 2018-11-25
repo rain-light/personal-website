@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact | Riccardo Battiato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="//brick.freetls.fastly.net/Titillium:300,400,600,700">
+    <link rel="shortcut icon" type="image/png" href="img/logo-small.png">
+</head>
+<body>
+    <div class="shape-container">
+        <div class="shape-big">
+            <img src="/img/shape-big.svg" class="shape">
+        </div>
+    </div>
+        <input type="checkbox" id="navigation" class="mobile__checkbox">
+        <nav class="navigation">
+            <div class="navigation__logo-box">
+                <img src="/img/logo.svg" alt="logo" class="navigation__logo">
+            </div>
+            <div class="navigation__content">
+                <ul class="navigation__list">
+                    <li class="navigation__element">
+                        <a href="/index.html" class="navigation__link">Home</a>
+                    </li>
+                    <li class="navigation__element">
+                        <a href="/portfolio.html" class="navigation__link">Portfolio</a>
+                    </li>
+                    <li class="navigation__element">
+                        <a href="/about.html" class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__element">
+                        <a href="/contact.html" class="navigation__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="navigation__socials">
+                    <a href="#" class="social-link">
+                        <svg class="social-icon social-icon--facebook">
+                            <use xlink:href="/img/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="social-icon social-icon--twitter">
+                            <use xlink:href="/img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="social-icon social-icon--github">
+                            <use xlink:href="/img/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <label for="navigation" class="mobile__label">
+                <div class="navigation__hamburger">
+                    <div class="navigation__hamburger-line"></div>
+                </div>
+            </label>
+        </nav>
+        <nav class="mobile">
+            <div class="mobile__content">
+                <label for="navigation" class="mobile__close-btn">
+                    <div class="mobile__close-btn-line"></div>
+                </label>
+                <div class="mobile__logo-box">
+                    <img src="/img/logo.svg" alt="" class="mobile__logo">
+                </div>
+                <ul class="mobile__list">
+                    <li class="mobile__element">
+                        <a href="/index.html" class="mobile__link">Home</a>
+                    </li>
+                    <li class="mobile__element">
+                        <a href="/portfolio.html" class="mobile__link">Portfolio</a>
+                    </li>
+                    <li class="mobile__element">
+                        <a href="/about.html" class="mobile__link">About</a>
+                    </li>
+                    <li class="mobile__element">
+                        <a href="/contact.html" class="mobile__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="mobile__social-icons">
+                    <a href="#">
+                        <svg class="mobile-social-icon mobile-social-icon--facebook">
+                            <use xlink:href="/img/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="mobile-social-icon mobile-social-icon--twitter">
+                            <use xlink:href="/img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="mobile-social-icon mobile-social-icon--github">
+                            <use xlink:href="/img/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <main class="u-margin-top-special u-padding-bottom-medium">
+            <div class="title">
+                <h1 class="heading-title">Contact</h1>
+            </div>
+            <form action="https://formcarry.com/s/SpQmepQtwoO" method="POST" accept-charset="UTF-8" class="contact__form u-margin-top-small">
+                <input type="text" name="name" required placeholder="Your Name" class="contact__input">
+                <input type="email" name="email" required placeholder="E-Mail Address" class="contact__input">
+                <textarea name="message" id="message" unresizable required placeholder="Message" class="contact__textarea"></textarea>
+                <input type="hidden" name="_gotcha">
+                <input type="submit" value="Send" class="btn btn--primary" style="font-family: inherit; font-size: inherit; cursor: pointer;">
+            </form>
+        </main>
+</body>
+</html>
