@@ -14,10 +14,6 @@
     &__skill-name {
         text-align: right;
         margin-bottom: .5rem;
-
-        /* span {
-            font-weight: 600;
-        } */
     }
 
     &__skill-bar {
@@ -44,7 +40,7 @@
             border-radius: .5rem 0 0 .5rem;
             top: 0;
             right: 0;
-            background-size: 4.2rem;
+            background-size: 3rem;
         }
 
         &--full {
@@ -52,26 +48,29 @@
             
             &::after {
                 border-radius: inherit;
-                background-image: repeating-linear-gradient(45deg, $color-green 0rem, $color-green 1.5rem, $color-green-light 1.5rem, $color-green-light 3rem);
+                background-color: $color-green;
+                background-image: linear-gradient(135deg, $color-green-light 0%, $color-green-light 25%, transparent 25%, transparent 50%, $color-green-light 50%, $color-green-light 75%, transparent 75%, transparent 100%);
                 animation: progress-bar 5s linear infinite;
             }
         }
 
         &--90 {
             width: 90%;
+            background-color: $color-sky;
 
             &::after {
-                background-image: repeating-linear-gradient(45deg, $color-sky 0rem, $color-sky 1.5rem, $color-sky-light 1.5rem, $color-sky-light 3rem);
+                background-image: linear-gradient(135deg, $color-sky-light 0%, $color-sky-light 25%, transparent 25%, transparent 50%, $color-sky-light 50%, $color-sky-light 75%, transparent 75%, transparent 100%);
                 animation: progress-bar 1.8s linear infinite;
             }
         }
 
         &--10 {
             width: 10%;
+            background-color: $color-yellow;
             min-width: 5rem;
 
             &::after {
-                background-image: repeating-linear-gradient(45deg, $color-yellow 0rem, $color-yellow 1.5rem, $color-yellow-light 1.5rem, $color-yellow-light 3rem);
+                background-image: linear-gradient(135deg, $color-yellow-light 0%, $color-yellow-light 25%, transparent 25%, transparent 50%, $color-yellow-light 50%, $color-yellow-light 75%, transparent 75%, transparent 100%);
                 animation: progress-bar .8s linear infinite;
             }
         }

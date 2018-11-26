@@ -156,7 +156,7 @@ main {
     background-position: 0;
   }
   100% {
-    background-position: 4.2rem;
+    background-position: 3rem;
   }
 }
 @keyframes progress-bar {
@@ -164,7 +164,7 @@ main {
     background-position: 0;
   }
   100% {
-    background-position: 4.2rem;
+    background-position: 3rem;
   }
 }
 
@@ -407,9 +407,6 @@ main {
 .skills__skill-name {
   text-align: right;
   margin-bottom: .5rem;
-  /* span {
-            font-weight: 600;
-        } */
 }
 
 .skills__skill-bar {
@@ -437,7 +434,7 @@ main {
   border-radius: .5rem 0 0 .5rem;
   top: 0;
   right: 0;
-  background-size: 4.2rem;
+  background-size: 3rem;
 }
 
 .skills__skill-bar-value-box--full {
@@ -446,28 +443,31 @@ main {
 
 .skills__skill-bar-value-box--full::after {
   border-radius: inherit;
-  background-image: repeating-linear-gradient(45deg, #05C46B 0rem, #05C46B 1.5rem, #0BE881 1.5rem, #0BE881 3rem);
+  background-color: #05C46B;
+  background-image: linear-gradient(135deg, #0BE881 0%, #0BE881 25%, transparent 25%, transparent 50%, #0BE881 50%, #0BE881 75%, transparent 75%, transparent 100%);
   -webkit-animation: progress-bar 5s linear infinite;
           animation: progress-bar 5s linear infinite;
 }
 
 .skills__skill-bar-value-box--90 {
   width: 90%;
+  background-color: #0FBCF9;
 }
 
 .skills__skill-bar-value-box--90::after {
-  background-image: repeating-linear-gradient(45deg, #0FBCF9 0rem, #0FBCF9 1.5rem, #4BCFFA 1.5rem, #4BCFFA 3rem);
+  background-image: linear-gradient(135deg, #4BCFFA 0%, #4BCFFA 25%, transparent 25%, transparent 50%, #4BCFFA 50%, #4BCFFA 75%, transparent 75%, transparent 100%);
   -webkit-animation: progress-bar 1.8s linear infinite;
           animation: progress-bar 1.8s linear infinite;
 }
 
 .skills__skill-bar-value-box--10 {
   width: 10%;
+  background-color: #FFA801;
   min-width: 5rem;
 }
 
 .skills__skill-bar-value-box--10::after {
-  background-image: repeating-linear-gradient(45deg, #FFA801 0rem, #FFA801 1.5rem, #FFC048 1.5rem, #FFC048 3rem);
+  background-image: linear-gradient(135deg, #FFC048 0%, #FFC048 25%, transparent 25%, transparent 50%, #FFC048 50%, #FFC048 75%, transparent 75%, transparent 100%);
   -webkit-animation: progress-bar .8s linear infinite;
           animation: progress-bar .8s linear infinite;
 }
