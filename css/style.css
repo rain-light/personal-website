@@ -415,6 +415,7 @@ main {
 .skills__skill-bar {
   background-color: #ccc;
   width: 100%;
+  max-width: 80rem;
   height: 3rem;
   margin-left: auto;
   border-radius: .5rem;
@@ -462,6 +463,7 @@ main {
 
 .skills__skill-bar-value-box--10 {
   width: 10%;
+  min-width: 5rem;
 }
 
 .skills__skill-bar-value-box--10::after {
@@ -999,6 +1001,13 @@ main {
       grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   grid-column-gap: 5%;
   grid-row-gap: 5rem;
+}
+
+@media only screen and (max-width: 36.25em) {
+  .about__grid {
+    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
 }
 
 @media only screen and (max-width: 75em) {
