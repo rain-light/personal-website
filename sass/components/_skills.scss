@@ -64,8 +64,8 @@
             animation: progress-bar 1s linear infinite;
         }
 
-        &--10 {
-            width: 10%;
+        &--70 {
+            width: 70%;
             min-width: 5rem;
             background-color: $color-yellow;
             background-image: linear-gradient(135deg, $color-yellow-light 0%,
@@ -81,7 +81,7 @@
         }
 
         &--90,
-        &--10 {
+        &--70 {
             border-radius: .5rem 0 0 .5rem;
         }
     }
